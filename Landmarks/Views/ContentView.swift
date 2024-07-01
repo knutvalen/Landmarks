@@ -17,20 +17,18 @@ struct ContentView: View {
                     .font(.title)
                 HStack {
                     Text("Joshua Tree National Park")
-                        
                     Spacer()
                     Text("California")
-                    
-                }.font(.subheadline).foregroundStyle(.secondary)
+                }
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
                 Divider()
                 Text("About Turtle Rock").font(.title2)
                 Text("Descriptive text goes here.")
-
             }
             .padding()
             Spacer()
         }
-            
     }
 }
 
