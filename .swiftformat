@@ -1,0 +1,11 @@
+# Options
+
+--swiftversion 5
+
+# Rules
+
+--enable isEmpty
+--enable organizeDeclarations
+--enable redundantProperty
+--enable acronyms
+--enable sortImports
