@@ -9,7 +9,7 @@ import SwiftUI
 import UIKit
 
 struct PageViewController<Page: View>: UIViewControllerRepresentable {
-    class Coordinator: NSObject, UIPageViewControllerDataSource {
+    class Coordinator: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
         // MARK: Lifecycle
 
         init(_ pageViewController: PageViewController) {
@@ -47,7 +47,23 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             }
             return controllers[index + 1]
         }
+
+        func pageViewController(
+            _ pageViewController: UIPageViewController,
+            didFinishAnimating _: Bool,
+            previousViewControllers _: [UIViewController],
+            transitionCompleted completed: Bool
+        ) {
+            if completed,
+               let visibleViewController = pageViewController.viewControllers?.first,
+               let index = controllers.firstIndex(of: visibleViewController)
+            {
+                parent.currentPage = index
+            }
+        }
     }
+
+    @Binding var currentPage: Int
 
     var pages: [Page]
 
@@ -57,7 +73,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
 
     func updateUIViewController(_ uiViewController: UIPageViewController, context: Context) {
         uiViewController.setViewControllers(
-            [context.coordinator.controllers[0]], direction: .forward, animated: true
+            [context.coordinator.controllers[currentPage]], direction: .forward, animated: true
         )
     }
 
@@ -67,6 +83,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             navigationOrientation: .horizontal
         )
         pageViewController.dataSource = context.coordinator
+        pageViewController.delegate = context.coordinator
 
         return pageViewController
     }

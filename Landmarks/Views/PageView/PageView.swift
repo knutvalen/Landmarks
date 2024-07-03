@@ -8,12 +8,21 @@
 import SwiftUI
 
 struct PageView<Page: View>: View {
+    // MARK: Internal
+
     var pages: [Page]
 
     var body: some View {
-        PageViewController(pages: pages)
-            .aspectRatio(3 / 2, contentMode: .fit)
+        VStack {
+            PageViewController(currentPage: $currentPage, pages: pages)
+            Text("Current Page: \(currentPage)")
+        }
+        .aspectRatio(3 / 2, contentMode: .fit)
     }
+
+    // MARK: Private
+
+    @State private var currentPage = 0
 }
 
 #Preview {
