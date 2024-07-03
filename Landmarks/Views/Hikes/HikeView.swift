@@ -58,7 +58,7 @@ struct HikeView: View {
 
     // MARK: Private
 
-    @State private var showDetail = false
+    @State private var showDetail = true
 }
 
 #Preview {
