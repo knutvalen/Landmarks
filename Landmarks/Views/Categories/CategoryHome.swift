@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CategoryHome: View {
+    // MARK: Internal
+
     @Environment(ModelData.self) var modelData
 
     var body: some View {
@@ -27,11 +29,27 @@ struct CategoryHome: View {
                 }
                 .listRowInsets(EdgeInsets())
             }
+            .listStyle(.inset)
             .navigationTitle("Featured")
+            .toolbar {
+                Button {
+                    showingProfile.toggle()
+                } label: {
+                    Label("User Profile", systemImage: "person.crop.circle")
+                }
+            }
+            .sheet(isPresented: $showingProfile) {
+                ProfileHost()
+                    .environment(modelData)
+            }
         } detail: {
             Text("Select a Landmark")
         }
     }
+
+    // MARK: Private
+
+    @State private var showingProfile = false
 }
 
 #Preview {
