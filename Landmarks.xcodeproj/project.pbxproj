@@ -41,6 +41,7 @@
 		CCF2F93C2C356C8B0051108C /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF2F93B2C356C8B0051108C /* ProfileHost.swift */; };
 		CCF2F93E2C356CDB0051108C /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF2F93D2C356CDB0051108C /* ProfileSummary.swift */; };
 		CCF2F9402C356DDF0051108C /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF2F93F2C356DDF0051108C /* HikeBadge.swift */; };
+		CCF2F9422C35745A0051108C /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF2F9412C35745A0051108C /* ProfileEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		CCF2F93B2C356C8B0051108C /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		CCF2F93D2C356CDB0051108C /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		CCF2F93F2C356DDF0051108C /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HikeBadge.swift; path = Landmarks/Views/Profiles/HikeBadge.swift; sourceTree = SOURCE_ROOT; };
+		CCF2F9412C35745A0051108C /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				CCF2F93B2C356C8B0051108C /* ProfileHost.swift */,
+				CCF2F9412C35745A0051108C /* ProfileEditor.swift */,
 				CCF2F93D2C356CDB0051108C /* ProfileSummary.swift */,
 			);
 			path = Profiles;
@@ -422,6 +425,7 @@
 				CC9525192C33EB2300F8A5CE /* LandmarkList.swift in Sources */,
 				CCF2F9202C3539070051108C /* Badge.swift in Sources */,
 				CC95251B2C33EEA900F8A5CE /* LandmarkDetail.swift in Sources */,
+				CCF2F9422C35745A0051108C /* ProfileEditor.swift in Sources */,
 				CCF2F92E2C353F1F0051108C /* HikeDetail.swift in Sources */,
 				CCF2F9302C353F1F0051108C /* HikeView.swift in Sources */,
 				CCF2F9222C3539070051108C /* HexagonParameters.swift in Sources */,
