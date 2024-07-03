@@ -45,6 +45,7 @@
 		CCF2F9452C357AD70051108C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF2F9442C357AD70051108C /* PageViewController.swift */; };
 		CCF2F9472C357C770051108C /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF2F9462C357C770051108C /* FeatureCard.swift */; };
 		CCF2F9492C357CD10051108C /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF2F9482C357CD10051108C /* PageView.swift */; };
+		CCF2F94B2C35945D0051108C /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF2F94A2C35945D0051108C /* PageControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		CCF2F9442C357AD70051108C /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		CCF2F9462C357C770051108C /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeatureCard.swift; path = Landmarks/FeatureCard.swift; sourceTree = SOURCE_ROOT; };
 		CCF2F9482C357CD10051108C /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		CCF2F94A2C35945D0051108C /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				CCF2F9482C357CD10051108C /* PageView.swift */,
+				CCF2F94A2C35945D0051108C /* PageControl.swift */,
 				CCF2F9442C357AD70051108C /* PageViewController.swift */,
 			);
 			path = PageView;
@@ -434,6 +437,7 @@
 				CCF2F92D2C353F1F0051108C /* GraphCapsule.swift in Sources */,
 				CCF2F92F2C353F1F0051108C /* HikeGraph.swift in Sources */,
 				CC95251D2C34191B00F8A5CE /* FavoriteButton.swift in Sources */,
+				CCF2F94B2C35945D0051108C /* PageControl.swift in Sources */,
 				CC9525262C35356700F8A5CE /* RotatedBadgeSymbol.swift in Sources */,
 				CCF2F9372C354DFF0051108C /* CategoryItem.swift in Sources */,
 				CCF2F9212C3539070051108C /* BadgeSymbol.swift in Sources */,
