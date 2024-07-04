@@ -65,6 +65,7 @@
 		CCF2F9872C36B79E0051108C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD536EE2C32A7C300DD80A2 /* MapView.swift */; };
 		CCF2F9882C36B79E0051108C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF2F9382C356BD50051108C /* Profile.swift */; };
 		CCF2F9892C36B79E0051108C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD536EC2C32A50A00DD80A2 /* CircleImage.swift */; };
+		CCF2F98B2C36B8FD0051108C /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF2F98A2C36B8FD0051108C /* LandmarkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +172,7 @@
 		CCF2F9692C36B3280051108C /* WatchLandmarks Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WatchLandmarks Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF2F96D2C36B3280051108C /* WatchLandmarks_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLandmarks_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		CCF2F96F2C36B3280051108C /* WatchLandmarks_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLandmarks_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CCF2F98A2C36B8FD0051108C /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +393,7 @@
 				CCF2F9542C36B3270051108C /* ContentView.swift */,
 				CCF2F9562C36B3280051108C /* Assets.xcassets */,
 				CCF2F9582C36B3280051108C /* Preview Content */,
+				CCF2F98A2C36B8FD0051108C /* LandmarkDetail.swift */,
 			);
 			path = "WatchLandmarks Watch App";
 			sourceTree = "<group>";
@@ -713,6 +716,7 @@
 				CCF2F9872C36B79E0051108C /* MapView.swift in Sources */,
 				CCF2F9882C36B79E0051108C /* Profile.swift in Sources */,
 				CCF2F9892C36B79E0051108C /* CircleImage.swift in Sources */,
+				CCF2F98B2C36B8FD0051108C /* LandmarkDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
